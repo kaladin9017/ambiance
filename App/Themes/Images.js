@@ -21,7 +21,6 @@ const images = {
   backButton: require("../Images/Icons/back-button.png"),
   closeButton: require("../Images/Icons/close-button.png"),
   wave: require('../Images/wave.png'),
-  welcomeScreenLogo: require('../Images/welcome-screen-logo.png')
 };
 
 export default images;
