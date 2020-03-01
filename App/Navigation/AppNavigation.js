@@ -3,21 +3,20 @@ import AuthSignupScreen from "../Containers/AuthSignupScreen";
 import AuthLoginScreen from "../Containers/AuthLoginScreen";
 import AuthWelcomeScreen from "../Containers/AuthWelcomeScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
+import AudioPlayerScreen from "../Containers/AudioPlayerScreen";
 
 import styles from "./Styles/NavigationStyles";
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator(
   {
-    AuthSignupScreen: { screen: AuthSignupScreen },
-    AuthLoginScreen: { screen: AuthLoginScreen },
-    AuthWelcomeScreen: { screen: AuthWelcomeScreen },
+    AudioPlayerScreen: { screen: AudioPlayerScreen },
     LaunchScreen: { screen: LaunchScreen }
   },
   {
     // Default config for all screens
     headerMode: "none",
-    initialRouteName: "LaunchScreen",
+    initialRouteName: "AudioPlayerScreen",
     navigationOptions: {
       headerStyle: styles.header
     }
@@ -39,4 +38,4 @@ const LoginNav = createStackNavigator(
   }
 );
 
-export default createAppContainer(LoginNav);
+export default createAppContainer(PrimaryNav);
